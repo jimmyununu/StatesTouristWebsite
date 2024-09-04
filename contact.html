@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body class="city-page"> 
+    <header>
+        <div class="header-content">
+            <h1>Have some questions?</h1>
+            <p>We'd love to hear from you!</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="little-rock.html">Little Rock</a></li>
+                <li><a href="hotsprings.html">Hot Springs</a></li>
+                <li><a href="fayetteville.html">Fayetteville</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-form">
+            <h2>Submit your questions!</h2>
+            <form action="/submit-form" method="post">
+                <div class="form-group">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email-confirm">Confirm Email Address:</label>
+                    <input type="email" id="email-confirm" name="email-confirm" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="question">Ask a Question:</label>
+                    <textarea id="question" name="question" rows="5" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Sources</p>
+    </footer>
+</body>
+</html>
