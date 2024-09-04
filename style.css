@@ -154,6 +154,18 @@ footer p {
     margin: 0;
 }
 
+/*styling for links*/
+ol a {
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+ol a:hover {
+    color: goldenrod; 
+    text-decoration: underline; 
+}
+
+
 /* city pages styling*/
 .city-page .city-info {
     display: flex;
