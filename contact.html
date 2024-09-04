@@ -26,7 +26,7 @@
     <main>
         <section class="contact-form">
             <h2>Submit your questions!</h2>
-            <form action="/submit-form" method="post">
+            <form id = "contact-form" action="/submit-form" method="post">
                 <div class="form-group">
                     <label for="first-name">First Name:</label>
                     <input type="text" id="first-name" name="first-name" required>
@@ -62,5 +62,17 @@
     <footer>
         <p><a href="workscited.html">*See Sources</a>
     </footer>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            const email = document.getElementById('email').value;
+            const emailConfirm = document.getElementById('email-confirm').value;
+            if (email !== emailConfirm) {
+                alert('Emails do not match.');
+                event.preventDefault();
+            }
+        });
+    </script>
+    
 </body>
 </html>
