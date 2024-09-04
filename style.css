@@ -39,7 +39,7 @@ header {
 }
 
 .header-content {
-    display: inline-block;
+    position: relative;
     padding: 20px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.5); 
@@ -81,6 +81,16 @@ main {
     padding: 0 20px;
 }
 
+a {
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+a:hover {
+    color: goldenrod; 
+    text-decoration: underline; 
+}
 
 
 .intro {
@@ -115,7 +125,10 @@ article {
 }
 
 aside {
-    flex: 1;
+    float: right;
+    width: 30%;
+    margin-left:20px;
+    
 }
 
 .gallery {
@@ -144,6 +157,7 @@ aside {
 footer {
     background-color: #222;
     color: white;
+    font-size: small;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
@@ -153,6 +167,7 @@ footer {
 footer p {
     margin: 0;
 }
+
 
 /*styling for links*/
 ol a {
@@ -342,6 +357,44 @@ ol a:hover {
     background-color: #0056b3;
 }
 
+#questions {
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    padding: 10px 15px;
+    background-color: gold;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    float: right;
+}
+
+/*citations styles*/
+.works-cited table {
+    width: 100%; 
+    border-collapse: collapse; 
+    margin: 20px 0;
+}
+
+.works-cited th, .works-cited td {
+    border: 1px solid #ddd; 
+    padding: 12px; 
+    text-align: left; 
+}
+
+.works-cited th {
+    background-color: #f2f2f2; /
+}
+
+.works-cited a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.works-cited a:hover {
+    text-decoration: underline;
+}
+
 /*adaption for home page*/
 @media (max-width: 768px) {
     header h1 {
@@ -386,5 +439,10 @@ ol a:hover {
 
     .city-page .city-info {
         flex-direction: column;
+    }
+
+    /*citation adaption*/
+    .works-cited table {
+        font-size: 0.9em; 
     }
 }
