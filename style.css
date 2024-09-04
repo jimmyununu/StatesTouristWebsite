@@ -1,5 +1,4 @@
 /* General reset and body styling */
-/* General reset and body styling */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -10,7 +9,7 @@ body {
     z-index: 1;
 }
 
-/* Background image with blur effect */
+/* Background image*/
 body::before {
     content: "";
     position: fixed;
@@ -19,13 +18,13 @@ body::before {
     width: 100%;
     height: 100%;
     background: url('./images/arkansasbackground.jpg') no-repeat center center/cover;
-    filter: blur(10px); /* Adjust the blur intensity */
+    filter: blur(10px);
     z-index: -1;
 }
 
-/* Ensure that the content is visible */
+
 header, main, footer {
-    background-color: rgba(255, 255, 255, 0.85); /* Slight transparency to blend with the blurred background */
+    background-color: rgba(255, 255, 255, 0.85); 
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -43,7 +42,7 @@ header {
     display: inline-block;
     padding: 20px;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.5); /* Darken the header content for better contrast */
+    background-color: rgba(0, 0, 0, 0.5); 
 }
 
 /* Navigation styling */
@@ -80,7 +79,6 @@ main {
     padding: 0 20px;
 }
 
-/* Other content sections stay the same */
 
 
 .intro {
@@ -116,10 +114,9 @@ article {
 
 aside {
     flex: 1;
-    background-image: url('./images/diamond.png');
 }
 
-/* Gallery styling */
+/* Gallery styling for images*/
 .gallery {
     margin-top: 40px;
 }
@@ -156,6 +153,7 @@ footer p {
     margin: 0;
 }
 
+/*adaption*/
 @media (max-width: 768px) {
     header h1 {
         font-size: 2em;
