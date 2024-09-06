@@ -414,6 +414,35 @@ ol a:hover {
     margin: 0 auto;
 }
 
+.learn-more {
+    position: fixed; 
+    bottom: 40px; 
+    right: 20px;
+    background-color: #f9f9f9; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+    font-size: 14px; 
+    z-index: 10; 
+    border-radius: 5px; 
+}
+.learn-more a {
+    color: #0073e6; 
+    text-decoration: none; 
+}
+.learn-more a:hover {
+    text-decoration: underline; 
+}
+
+#workcitedimage {
+    width: 150px; 
+    height: auto;
+    display: block; 
+    margin: 20px auto; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
 /*adaption for home page*/
 @media (max-width: 768px) {
     header h1 {
