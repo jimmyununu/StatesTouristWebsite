@@ -394,6 +394,25 @@ ol a:hover {
 .works-cited a:hover {
     text-decoration: underline;
 }
+.small-box {
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    width: 90px;
+    height: auto; 
+    padding: 10px; 
+    border: 1px solid #ccc;
+    background-color: #f9f9f9; 
+    text-align: center; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+    overflow: hidden;
+}
+.small-box img {
+    width: 50px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto;
+}
 
 /*adaption for home page*/
 @media (max-width: 768px) {
